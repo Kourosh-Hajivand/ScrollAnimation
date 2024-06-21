@@ -22,7 +22,12 @@ type GLTFResult = GLTF & {
         ['02']: THREE.MeshStandardMaterial
         ['03']: THREE.MeshStandardMaterial
     }
-    animations: any
+    animations: {
+        name: string;
+        start: number;
+        end: number;
+        tracks: any[];
+    }[]
 }
 const FLOOR_HEIGHT = 2.2
 const NB_FLOORS = 3
