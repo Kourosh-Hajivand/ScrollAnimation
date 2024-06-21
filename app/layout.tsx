@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'kourosh H',
     description: 'Front end Developer Next.js React',
-    images: "/Logo-White1.png"
+    images: "/LogoOG.png"
   },
   authors: {
     name: "Kourosh H",
