@@ -10,12 +10,7 @@ import { GLTF } from 'three-stdlib'
 import gsap from 'gsap'
 import { useFrame } from '@react-three/fiber'
 
-type GLTFAction = {
-    name: string;
-    start: number;
-    end: number;
-    tracks: any[];
-}
+
 type GLTFResult = GLTF & {
     nodes: {
         ['01_office']: THREE.Mesh
@@ -27,7 +22,12 @@ type GLTFResult = GLTF & {
         ['02']: THREE.MeshStandardMaterial
         ['03']: THREE.MeshStandardMaterial
     }
-    animations: GLTFAction[]
+    animations: {
+        name: string;
+        start: number;
+        end: number;
+        tracks: any[];
+    }[]
 }
 const FLOOR_HEIGHT = 2.2
 const NB_FLOORS = 3
